@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center|center_horizontal"
+    android:orientation="vertical"
+    tools:context=".CookbookActivity">
+
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recipeIconRecycler"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp" />
+
+    </GridLayout>
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        >
+
+        <RadioButton
+            android:id="@+id/dayOne"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Today:"
+            android:onClick="onRadioButtonClicked"/>
+
+        <RadioButton
+            android:id="@+id/dayTwo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tomorrow:"
+            android:onClick="onRadioButtonClicked"/>
+
+        <RadioButton
+            android:id="@+id/dayThree"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Three days out:"
+            android:onClick="onRadioButtonClicked"/>
+
+        <RadioButton
+            android:id="@+id/dayFour"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Four days out:"
+            android:onClick="onRadioButtonClicked"/>
+
+        <RadioButton
+            android:id="@+id/dayFive"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Five days out:"
+            android:onClick="onRadioButtonClicked"/>
+
+        <RadioButton
+            android:id="@+id/daySix"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Six days out:"
+            android:onClick="onRadioButtonClicked"/>
+
+        <RadioButton
+            android:id="@+id/daySeven"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Seven days out:"
+            android:onClick="onRadioButtonClicked"/>
+    </RadioGroup>
+
+</LinearLayout>

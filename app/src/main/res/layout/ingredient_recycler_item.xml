@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:orientation="horizontal"
+    android:background="@drawable/ingredient_recycler_bg">
+
+    <TextView
+        android:id="@+id/ingredientText"
+        android:layout_width="310dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="9"
+        android:paddingStart="15dp"
+        android:text="ingredient"
+        android:textSize="20sp" />
+
+    <CheckBox
+        android:id="@+id/ingredientCheckbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        />
+
+</LinearLayout>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="200dp"
+    android:layout_height="200dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="20dp">
+
+        <TextView
+            android:id="@+id/hiddenIDC"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_gravity="center"
+            />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_rowWeight="1"
+        android:layout_columnWeight="1"
+        android:layout_margin="10dp"
+        app:cardCornerRadius="10dp">
+
+        <ImageView
+            android:id="@+id/recipeImageC"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_launcher_foreground"
+            android:padding="0dp"/>
+
+
+        <TextView
+            android:id="@+id/recipeNameC"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:background="@color/orange_overlay"
+            android:layout_margin="0dp"
+            android:paddingBottom="10dp"
+            android:paddingStart="7dp"
+            android:textColor="@color/grey"
+            android:text="Recipe Title"
+            android:textSize="20sp" />
+
+        <ImageButton
+            android:id="@+id/recipeStarC"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="top|end"
+            android:layout_margin="5dp"
+            android:onClick="onClickRecipeFavoriteRA"
+            android:background="@drawable/round_star_bg"
+            app:tint="@color/orange_header"
+            android:src="@drawable/star_on"/>
+
+    </androidx.cardview.widget.CardView>
+
+
+    </FrameLayout>
+
+</GridLayout>
